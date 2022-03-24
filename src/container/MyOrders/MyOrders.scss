@@ -1,0 +1,48 @@
+.app__orders {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+
+.app__orders-card {
+    background-color: var(--lightGray-color);
+    width: 400px;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow:  0 0 10px rgba(0,0,0,0.3);
+    
+    h4 {
+        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        border: 1px solid var(--gray-color);
+        background-color: #a1a3a8;
+        border-radius: 25px;
+        width: 35%;
+        margin-left: 0.5rem;
+    }
+    h3 {
+        color: var(--black-color);
+        span {
+            color: var(--gray-color);
+            font-size: 1rem;
+            margin-left: 0.5rem;
+        }
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+    @media screen and (max-width:768px) {
+        width: 100%;
+        flex-direction: column;
+        margin: 1rem 0.5rem;
+    }
+}
+.app__orders .app__orders-card:last-child {
+    h4 {
+        background-color: #78c294;
+    }
+}

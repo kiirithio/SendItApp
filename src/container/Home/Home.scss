@@ -1,0 +1,55 @@
+.app__home {
+    flex: 1;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.app__home-image {
+    width: 50%;
+    margin: 3rem 0 0 5rem;
+    img {
+        @media screen and (max-width:768px) {
+            width: 100%;
+        }
+    }
+}
+
+.app__home-text {
+    flex-direction: column;
+    width: 50%;
+
+    h1 {
+        width: 100%;
+        margin: 2rem 0 0 0;
+        font-size: 2.75rem;
+        font-weight: 800;
+    }
+    h3 {
+        width: 100%;
+        margin: 2rem 0 0 0;
+    }
+    button {
+        padding: 1rem 2rem;
+        border-radius: 7px;
+        border: none;
+        background-color: var(--secondary-color);
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: var(--white-color);
+        outline: none;
+        margin: 2rem 0 0 0;
+        font-family: var(--font-base);
+        cursor: pointer;
+
+        &:hover{
+            opacity: 0.9;
+        }
+    }
+    @media screen and (max-width:768px) {
+        width: 90%;
+    }
+}

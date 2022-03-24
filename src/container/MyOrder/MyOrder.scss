@@ -1,0 +1,112 @@
+.app__myorder {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    position: fixed;
+    background: #00000050;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.app__myorder-popup {
+    width: 70%;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    max-height: 70vh;
+    margin-top: calc(100vh - 85vh - 20px);
+    border-radius: 10px;
+    padding: 2rem;
+    border: 1px solid var(--gray-color);
+    overflow: auto;
+    background: var(--lightGray-color);
+
+    span {
+        position: fixed;
+        right: calc(15% - 30px);
+        top: calc(100vh - 85vh - 33px);
+        border-radius: 50%;
+        display: flex;
+        background: var(--white-color);
+        svg {
+            width: 30px;
+            height: 30px;
+            color: #ed5249;
+            cursor: pointer;
+        }
+        
+    @media screen and (max-width:768px) {
+        top: calc(100vh - 85vh - 30px);
+    }
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        min-width: 50%;
+        justify-content: space-between;
+        h3 {
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin-top: 0;
+        }
+        h4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+            border: 1px solid var(--gray-color);
+            background-color: #a1a3a8;
+            border-radius: 25px;
+            width: 35%;
+            margin-left: 0.5rem;
+        }
+        img {
+            width: 100%;
+        }
+        button {
+            width: 80%;
+            padding: 1rem 2rem;
+            border-radius: 7px;
+            border: none;
+            background-color: var(--secondary-color);
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--white-color);
+            outline: none;
+            font-family: var(--font-base);
+            cursor: pointer;
+            margin: 2rem 0 0 0;
+            align-items: center;
+            @media screen and (max-width:768px) {
+                width: auto;
+            }
+    
+            svg {
+                width: 20px;
+                height: 20px;
+                color: var(--white-color);
+                cursor: pointer;
+                margin-right: 0.5rem;
+            }
+    
+            &:hover{
+                opacity: 0.9;
+            }
+        }
+        @media screen and (max-width:768px) {
+            margin-bottom: 1rem;
+        }
+    }
+    @media screen and (max-width:768px) {
+        width: 80%;
+        flex-direction: column;
+    }
+}
+.courier-details {
+    width: 60%;
+    img {
+        border-radius: 50%;
+    }
+}

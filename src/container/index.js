@@ -1,0 +1,9 @@
+export { default as Home} from './Home/Home';
+export { default as SignIn} from './SignIn/SignIn';
+export { default as SignUp} from './SignUp/SignUp';
+export { default as ForgotPassword} from './ForgotPassword/ForgotPassword';
+export { default as CreateParcel} from './CreateParcel/CreateParcel';
+export { default as ConfirmOrder} from './ConfirmOrder/ConfirmOrder';
+export { default as MyOrders} from './MyOrders/MyOrders';
+export { default as MyOrder} from './MyOrder/MyOrder';
+export { default as Dashboard} from './Dashboard/Dashboard';

@@ -1,0 +1,68 @@
+.app__dashboard {
+    flex: 1;
+    display: flex;
+    width: 100%;
+}
+.app__dashboard-sidebar{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: var(--lightGray-color);
+    border-radius: 15px;
+    margin: 3rem 1rem;
+
+    ul {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+    
+        li{
+            margin: 1rem 0;
+            cursor: pointer;
+    
+            div {
+                width: 5px;
+                height: 5px;
+                background: transparent;
+                border-radius: 50%;
+                margin-right: 5px;
+            }
+    
+            p {
+                color: var(--black-color);
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 500;
+                transition: all 0.3s ease-in-out;
+    
+                &:hover {
+                    color: var(--secondary-color);
+                }
+            }
+    
+            &:hover{
+                div {
+                    background: var(--secondary-color);
+                }
+            }
+        }
+        
+        .active {
+            border-bottom: 1px solid var(--black-color);
+        }
+    
+        @media screen and (max-width: 900px) {
+             display: none;       
+        }
+    }
+}
+
+.app__dashboard-card {
+    width: 100%;
+}

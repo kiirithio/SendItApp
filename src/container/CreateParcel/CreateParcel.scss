@@ -1,0 +1,80 @@
+.app__parcel {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+
+.app__parcel-form {
+    display: flex;
+    margin: 1rem 2rem;
+    width: 100%;
+    @media screen and (max-width:768px) {
+        margin: 0 auto;
+    }
+    
+    div {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 4rem 0 0;
+        max-height: 300px;
+        @media screen and (max-width:768px) {
+            margin: 2rem 0;
+        }
+
+        .app__steps {
+            width: 20px;
+            height: 20px;
+            padding: 2rem;
+            background-color: var(--secondary-color);
+            color: var(--white-color);
+            border-radius: 50%;
+            margin: 1rem 0;
+            @media screen and (max-width:768px) {
+                padding: 1rem;
+            }
+        }
+    
+
+        input, select {
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 7px;
+            background-color: var(--lightGray-color);
+
+            font-family: var(--font-base);
+            outline: none;
+        }
+        button {
+            width: auto;
+            padding: 1rem 2rem;
+            border-radius: 7px;
+            border: none;
+            background-color: var(--secondary-color);
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--white-color);
+            outline: none;
+            font-family: var(--font-base);
+            cursor: pointer;
+            float: right;
+            margin: 2rem 0 0 0;
+
+            &:hover{
+                opacity: 0.9;
+            }
+        }
+        @media screen and (max-width:768px) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    @media screen and (max-width:768px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+}
